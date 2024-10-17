@@ -19,8 +19,8 @@ db.flights.insertOne({
     "flightNumber": "AV125",
     "originAirportId": "CLO",
     "destinationAirportId": "BOG",
-    "departureDate": ISODate("2024-11-05T14:30:00Z"),
-    "arrivalDate": ISODate("2024-11-05T16:00:00Z")
+    "departureDate": "2024-11-05T14:30:00Z",
+    "arrivalDate": "2024-11-05T16:00:00Z"
 });
 
 
@@ -30,7 +30,7 @@ db.reservations.insertOne({
     "_id": 98773,
     "userId": 6,
     "flightId": 12350,
-    "reservationDate": ISODate("2024-11-01T10:00:00Z"),
+    "reservationDate": "2024-11-01T10:00:00Z",
     "seatNumber": "7B",
     "class": "Economy"
 });
