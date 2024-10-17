@@ -1,5 +1,0 @@
-{"_id":12345,"flightNumber":"AV123","originAirportId":"BOG","destinationAirportId":"CLO","departureDate":"2024-10-10T10:00:00Z","arrivalDate":"2024-10-10T12:00:00Z"}
-{"_id":12346,"flightNumber":"AV456","originAirportId":"MIA","destinationAirportId":"JFK","departureDate":"2024-10-15T15:00:00Z","arrivalDate":"2024-10-15T18:00:00Z"}
-{"_id":12347,"flightNumber":"AV789","originAirportId":"CLO","destinationAirportId":"MAD","departureDate":"2024-10-20T22:00:00Z","arrivalDate":"2024-10-21T10:00:00Z"}
-{"_id":12348,"flightNumber":"AV321","originAirportId":"JFK","destinationAirportId":"MIA","departureDate":"2024-10-25T09:00:00Z","arrivalDate":"2024-10-25T11:00:00Z"}
-{"_id":12349,"flightNumber":"AV654","originAirportId":"BOG","destinationAirportId":"MIA","departureDate":"2024-10-30T14:00:00Z","arrivalDate":"2024-10-30T16:00:00Z"}
