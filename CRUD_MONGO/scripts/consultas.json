@@ -1,0 +1,108 @@
+CONSULTAS CRUD (CREATE, READ, UPDATE, DELETE)
+
+CREATE ==================================================================================
+
+CONSULTA #1: 
+
+db.users.insertOne({
+    "_id": 6,
+    "email": "juangutierrez@gmail.com",
+    "password": "hashed_password_789",
+    "personalInfoId": 106
+});
+
+
+CONSULTA #2: 
+
+db.flights.insertOne({
+    "_id": 12350,
+    "flightNumber": "AV125",
+    "originAirportId": "CLO",
+    "destinationAirportId": "BOG",
+    "departureDate": ISODate("2024-11-05T14:30:00Z"),
+    "arrivalDate": ISODate("2024-11-05T16:00:00Z")
+});
+
+
+CONSULTA #3: 
+
+db.reservations.insertOne({
+    "_id": 98773,
+    "userId": 6,
+    "flightId": 12350,
+    "reservationDate": ISODate("2024-11-01T10:00:00Z"),
+    "seatNumber": "7B",
+    "class": "Economy"
+});
+
+READ =====================================================================================
+
+CONSULTA #4: 
+
+db.flights.find({ originAirportId: "BOG" })
+
+
+CONSULTA #5: 
+
+db.reservations.find({ userId: 1 })
+
+
+CONSULTA #6:
+
+db.reservations.find({
+    reservationDate: { $lte: "2024-10-10T00:00:00Z" }
+})
+
+
+UPDATE ====================================================================================
+
+CONSULTA #7: 
+
+db.reservations.updateOne(
+    { _id: 98765 },
+    { $set: { class: "Business" } }
+);
+
+
+CONSULTA #8:
+
+db.users.updateOne(
+    { email: "newuser@gmail.com" },  
+    {
+        $set: { password: "hashed_password_new" },  
+        $setOnInsert: {
+            _id: 7,  
+            personalInfoId: 107
+        }
+    },
+    { upsert: true }  
+);
+
+
+CONSULTA #9: 
+
+db.personal_info.updateOne(
+    { _id: 101 },  
+    { 
+        $set: { 
+            "fullName.firstName": "Brayan Updated"  
+        },
+        $push: { 
+            phones: { $each: [3112345678] } 
+        }
+    }
+);
+
+
+
+
+DELETE ====================================================================================
+
+CONSULTA #10: 
+
+db.users.deleteOne({ _id: 6 });
+
+
+CONSULTA #11: 
+
+db.reservations.deleteMany({ userId: 1 });

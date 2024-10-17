@@ -1,0 +1,66 @@
+[
+    {
+        "_id": 98765,
+        "userId": 1,  
+        "flightId": 12345,  
+        "reservationDate": "2024-10-01T08:00:00Z",
+        "seatNumber": "12A",
+        "class": "Economy"
+    },
+    {
+        "_id": 98766,
+        "userId": 1, 
+        "flightId": 12346,  
+        "reservationDate": "2024-10-05T09:30:00Z",
+        "seatNumber": "14B",
+        "class": "Business"
+    },
+    {
+        "_id": 98767,
+        "userId": 2,
+        "flightId": 12347, 
+        "reservationDate": "2024-10-08T10:15:00Z",
+        "seatNumber": "10C",
+        "class": "Economy"
+    },
+    {
+        "_id": 98768,
+        "userId": 3, 
+        "flightId": 12348, 
+        "reservationDate": "2024-10-12T11:45:00Z",
+        "seatNumber": "22A",
+        "class": "Economy"
+    },
+    {
+        "_id": 98769,
+        "userId": 3,  
+        "flightId": 12349, 
+        "reservationDate": "2024-10-18T15:00:00Z",
+        "seatNumber": "23B",
+        "class": "Business"
+    },
+    {
+        "_id": 98770,
+        "userId": 4, 
+        "flightId": 12345,  
+        "reservationDate": "2024-10-04T17:30:00Z",
+        "seatNumber": "15A",
+        "class": "Economy"
+    },
+    {
+        "_id": 98771,
+        "userId": 5,  
+        "flightId": 12346,  
+        "reservationDate": "2024-10-10T13:15:00Z",
+        "seatNumber": "8C",
+        "class": "First Class"
+    },
+    {
+        "_id": 98772,
+        "userId": 1,  
+        "flightId": 12347,  
+        "reservationDate": "2024-10-10T12:00:00Z",
+        "seatNumber": "5A",
+        "class": "Economy"
+    }
+]
